@@ -1,0 +1,10 @@
+@import "./style"; /*Импортирование другого файла со стилями*/
+$colorG: #eaeaea; /*Создание переменной*/
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: $colorG;
+    text-align: center;
+}
+@include form(); /*Импортирование части стилей*/
