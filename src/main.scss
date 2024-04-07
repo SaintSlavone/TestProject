@@ -4,7 +4,9 @@ $colorG: #eaeaea; /*Создание переменной*/
 .container{
     max-width: 1600px;
     margin: 0 auto;
-    background-color: $colorG;
     text-align: center;
+}
+body{
+    background: $colorG
 }
 @include form(); /*Импортирование части стилей*/

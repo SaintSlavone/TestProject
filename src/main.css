@@ -79,8 +79,11 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   max-width: 1600px;
   margin: 0 auto;
-  background-color: #eaeaea;
   text-align: center;
+}
+
+body {
+  background: #eaeaea;
 }
 
 .form {
@@ -89,7 +92,7 @@ h1, h2, h3, h4, h5, h6 {
   border: solid 1px black;
   padding: 10px 5px 0 5px;
   text-align: center;
-  margin: 324px 0 400px 0;
+  margin-top: 12%;
 }
 .form img {
   display: flex;
