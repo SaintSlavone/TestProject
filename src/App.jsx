@@ -1,36 +1,16 @@
-import React from 'react'
-import image1 from "./image1.png"
+import React from 'react';
+import {Link} from 'react-router-dom';
 
-export default function App() {
-  /*const mysql = require('mysql');
-
-  const conn = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    database: "test_db",
-    password: ""
-  });
-
-  conn.connect(err => {
-    if(err){
-      console.log(err);
-      return err;
-    }else{
-      console.log("Database ------ OK");
-    }
-  });*/
+export default function App(){
   return (
     <>
-    <div className='container'>
-      <form className='form' action="">
-        <label htmlFor="">Registration form</label>
-        <img src={image1} alt="user_image" />
-        <input type="text" placeholder='login' required />
-        <input type="password" placeholder='password' required />
-        <input type="password" placeholder='confirm password' required />
-        <button type='submit'>Send</button>
-      </form>
-    </div>
+      <div className="container">
+        <h1 className='h1'>Test Project</h1>
+        <div className="wrapper">
+          <Link className='linkButton' to="/register">Registration</Link>
+          <Link className='linkButton' to="/login">Login</Link>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
